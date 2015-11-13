@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import nl.fornax.ui.*?>
+
+<SplitPane dividerPositions="0.25" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.fornax.ui.FileBrowserController">
+	<items>
+		<TreeView fx:id="directoriesTree" prefWidth="200.0" showRoot="false" />
+		<TableView fx:id="tableFiles">
+			<columns>
+				<TableColumn fx:id="tableColName" prefWidth="320.0" text="Name" />
+				<TableColumn fx:id="tableColSize" prefWidth="140.0" text="Size" />
+				<TableColumn fx:id="tableColId" prefWidth="120.0" text="ID" />
+			</columns>
+		</TableView>
+	</items>
+</SplitPane>
